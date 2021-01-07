@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:webtry/pages/home/home_page.dart';
+import 'package:webtry/widgets/locator.dart';
 
-import 'pages/about/about_page.dart';
-
-void main() => runApp(MyApp());
+void main() {
+  setupLocator();
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override
@@ -12,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: AboutPage(),
+      home: HomePage(),
       // initialRoute: 'AboutPage',
       // routes: {
       //   'AboutPage': (BuildContext context) => AboutPage(),

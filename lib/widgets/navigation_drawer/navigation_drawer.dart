@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:webtry/routing/route_names.dart';
 import 'drawer_item.dart';
 
 class NavigationDrawer extends StatelessWidget {
@@ -12,11 +13,11 @@ class NavigationDrawer extends StatelessWidget {
       ),
       child: Column(
         children: [
-          DrawerItem('About', Icons.info),
-          DrawerItem('Products', Icons.info),
-          DrawerItem('Services', Icons.info),
-          DrawerItem('Testimonials', Icons.info),
-          DrawerItem('Contact', Icons.info),
+          DrawerItem('About', Icons.info, AboutRoute),
+          DrawerItem('Products', Icons.info, ProductsRoute),
+          DrawerItem('Services', Icons.info, ServicesRoute),
+          DrawerItem('Testimonials', Icons.info, TestimonialsRoute),
+          DrawerItem('Contact', Icons.info, ContactRoute),
         ],
       ),
     );
