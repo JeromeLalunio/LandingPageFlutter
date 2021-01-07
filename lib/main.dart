@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import './pages/about_page.dart';
+import 'pages/about/about_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -12,9 +12,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Scaffold(
-        body: AboutPage(),
-      ),
+      home: AboutPage(),
+      // initialRoute: 'AboutPage',
+      // routes: {
+      //   'AboutPage': (BuildContext context) => AboutPage(),
+      // },
     );
   }
 }
