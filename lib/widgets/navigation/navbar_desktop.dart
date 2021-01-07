@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:webtry/routing/route_names.dart';
 import 'navbar_item.dart';
 
 class NavBarDesktop extends StatelessWidget {
@@ -12,15 +13,15 @@ class NavBarDesktop extends StatelessWidget {
           Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              NavBarItem('About'),
+              NavBarItem('About', AboutRoute),
               SizedBox(width: 60),
-              NavBarItem('Products'),
+              NavBarItem('Products', ProductsRoute),
               SizedBox(width: 60),
-              NavBarItem('Testimonials'),
+              NavBarItem('Testimonials', TestimonialsRoute),
               SizedBox(width: 60),
-              NavBarItem('Services'),
+              NavBarItem('Services', ServicesRoute),
               SizedBox(width: 60),
-              NavBarItem('Contact'),
+              NavBarItem('Contact', ContactRoute),
             ],
           ),
           SizedBox(

@@ -8,7 +8,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
   switch (settings.name) {
     case AboutRoute:
       return _getPageRoute(AboutPage());
-    case AboutRoute:
+    case ProductsRoute:
       return _getPageRoute(ProductsPage());
     default:
       return null;
