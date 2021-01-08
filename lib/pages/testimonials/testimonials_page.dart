@@ -6,9 +6,21 @@ import 'package:webtry/pages/testimonials/mobile_content_testimonials.dart';
 class TestimonialsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return ScreenTypeLayout(
-      mobile: MobileContentTestimonials(),
-      desktop: DesktopContentTestimonials(),
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.center,
+      mainAxisSize: MainAxisSize.max,
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Text(
+          'Testimonials',
+          style: TextStyle(fontWeight: FontWeight.w700, fontSize: 30),
+        ),
+        SizedBox(height: 30),
+        ScreenTypeLayout(
+          mobile: MobileContentTestimonials(),
+          desktop: DesktopContentTestimonials(),
+        ),
+      ],
     );
   }
 }
