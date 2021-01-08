@@ -10,6 +10,7 @@ class MobileContentService extends StatelessWidget {
         height: 450.0,
         enlargeCenterPage: true,
         autoPlay: true,
+        enableInfiniteScroll: true,
         autoPlayInterval: Duration(seconds: 4),
         autoPlayAnimationDuration: Duration(milliseconds: 800),
         autoPlayCurve: Curves.fastOutSlowIn,
