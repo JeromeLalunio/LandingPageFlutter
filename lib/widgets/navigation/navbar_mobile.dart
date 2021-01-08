@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:webtry/constants.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class NavBarMobile extends StatelessWidget {
   @override
@@ -11,9 +12,12 @@ class NavBarMobile extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           IconButton(
-              icon: Icon(Icons.menu),
+              icon: Icon(Icons.forward),
               onPressed: () {
                 // scaffoldKey.currentState.openEndDrawer();
+                Fluttertoast.showToast(
+                    msg: "Button not working, swipe right instead",
+                    toastLength: Toast.LENGTH_LONG);
               }),
           SizedBox(
             height: 80,
