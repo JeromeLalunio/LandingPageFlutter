@@ -15,6 +15,7 @@ class NavBarMobile extends StatelessWidget {
               icon: Icon(Icons.forward),
               onPressed: () {
                 // scaffoldKey.currentState.openEndDrawer();
+                // I'll use BloC for this , once I learn it
                 Fluttertoast.showToast(
                     msg: "Button not working, swipe right instead",
                     toastLength: Toast.LENGTH_LONG);
