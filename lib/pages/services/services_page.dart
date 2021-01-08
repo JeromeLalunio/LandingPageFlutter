@@ -1,25 +1,25 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
-import 'package:webtry/pages/testimonials/desktop_content_testimonials.dart';
-import 'package:webtry/pages/testimonials/mobile_content_testimonials.dart';
+import 'package:webtry/pages/services/desktop_content_services.dart';
+import 'package:webtry/pages/services/mobile_content_services.dart';
 
-class TestimonialsPage extends StatelessWidget {
+class ServicesPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       mainAxisSize: MainAxisSize.max,
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(
-          'Testimonials',
+          'Services Offered',
           style: TextStyle(fontWeight: FontWeight.w700, fontSize: 30),
         ),
         SizedBox(height: 30),
         ScreenTypeLayout(
-          mobile: MobileContentTestimonials(),
-          desktop: DesktopContentTestimonials(),
-        ),
+          mobile: MobileContentService(),
+          desktop: DesktopContentService(),
+        )
       ],
     );
   }

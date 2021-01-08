@@ -30,6 +30,7 @@ dependencies:
   responsive_builder: ^0.3.0
   get_it:
   carousel_slider: ^2.3.1
+  font_awesome_flutter: ^8.11.0
 
 dev_dependencies:
   flutter_test:
@@ -52,6 +53,7 @@ flutter:
   assets:
     - images/background.png
     - images/music_product.png
+    - images/code.png
     - images/testimonials/joe.jpeg
     - images/testimonials/coco.jpeg
     - images/testimonials/jordan.webp
