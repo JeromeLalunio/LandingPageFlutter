@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:webtry/constants.dart';
 
 class NavBarMobile extends StatelessWidget {
   @override
@@ -9,7 +10,11 @@ class NavBarMobile extends StatelessWidget {
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          IconButton(icon: Icon(Icons.menu), onPressed: () {}),
+          IconButton(
+              icon: Icon(Icons.menu),
+              onPressed: () {
+                // scaffoldKey.currentState.openEndDrawer();
+              }),
           SizedBox(
             height: 80,
             child: Center(

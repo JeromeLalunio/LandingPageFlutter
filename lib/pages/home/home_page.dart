@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
+import 'package:webtry/constants.dart';
 import 'package:webtry/routing/route_names.dart';
 import 'package:webtry/routing/router.dart';
 import 'package:webtry/services/navigator_service.dart';
@@ -13,6 +14,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return ResponsiveBuilder(
       builder: (context, sizingInformation) => Scaffold(
+        key: scaffoldKey,
         drawer: sizingInformation.deviceScreenType == DeviceScreenType.mobile
             ? NavigationDrawer()
             : null,
@@ -25,7 +27,7 @@ class HomePage extends StatelessWidget {
                 child: Navigator(
                   key: locator<NavigationService>().navigatorKey,
                   onGenerateRoute: generateRoute,
-                  initialRoute: ProductsRoute,
+                  initialRoute: AboutRoute,
                 ),
               ),
             ],
