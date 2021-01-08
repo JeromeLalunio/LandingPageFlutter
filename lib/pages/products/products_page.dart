@@ -8,13 +8,14 @@ class ProductsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
-      mainAxisAlignment: MainAxisAlignment.spaceAround,
       mainAxisSize: MainAxisSize.max,
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(
           'Sample Products',
           style: TextStyle(fontWeight: FontWeight.w700, fontSize: 30),
         ),
+        SizedBox(height: 30),
         ScreenTypeLayout(
           mobile: MobileContentProduct(),
           desktop: DesktopContentProduct(),

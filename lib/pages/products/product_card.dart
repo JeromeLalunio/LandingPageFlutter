@@ -10,6 +10,7 @@ class ProductCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: EdgeInsets.all(10),
       alignment: Alignment.center,
       padding: EdgeInsets.symmetric(vertical: 20, horizontal: 5),
       decoration: BoxDecoration(
@@ -19,7 +20,7 @@ class ProductCard extends StatelessWidget {
         ],
         borderRadius: BorderRadius.circular(45),
       ),
-      width: 300,
+      width: 280,
       height: 450,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
