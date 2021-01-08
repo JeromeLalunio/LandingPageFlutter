@@ -25,7 +25,7 @@ class HomePage extends StatelessWidget {
                 child: Navigator(
                   key: locator<NavigationService>().navigatorKey,
                   onGenerateRoute: generateRoute,
-                  initialRoute: AboutRoute,
+                  initialRoute: ProductsRoute,
                 ),
               ),
             ],
