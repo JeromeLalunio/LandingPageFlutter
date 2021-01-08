@@ -52,6 +52,9 @@ flutter:
   assets:
     - images/background.png
     - images/music_product.png
+    - images/testimonials/joe.jpeg
+    - images/testimonials/coco.jpeg
+    - images/testimonials/jordan.webp
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
