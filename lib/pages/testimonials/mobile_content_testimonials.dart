@@ -8,10 +8,6 @@ class MobileContentTestimonials extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceAround,
       mainAxisSize: MainAxisSize.max,
       children: [
-        Text(
-          'Testimonials',
-          style: TextStyle(fontWeight: FontWeight.w700, fontSize: 30),
-        ),
         MobileCardTestimonials('Joe Rogan', 'images/testimonials/joe.jpeg'),
         MobileCardTestimonials(
             'Jordan Peterson', 'images/testimonials/jordan.webp'),

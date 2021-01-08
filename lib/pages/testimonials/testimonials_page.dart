@@ -9,7 +9,6 @@ class TestimonialsPage extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       mainAxisSize: MainAxisSize.max,
-      mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(
           'Testimonials',
