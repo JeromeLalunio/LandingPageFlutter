@@ -22,42 +22,40 @@ class MobileCardTestimonials extends StatelessWidget {
         ],
         borderRadius: BorderRadius.circular(45),
       ),
-      child: Expanded(
-        child: Row(
-          children: [
-            ClipOval(
-                child: Image(
-              image: AssetImage(image),
-              height: 90,
-            )),
-            SizedBox(width: 10),
-            Expanded(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisSize: MainAxisSize.max,
-                children: [
-                  Text(
-                    name,
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      _yellowStar,
-                      _yellowStar,
-                      _yellowStar,
-                      _yellowStar,
-                      _yellowStar,
-                    ],
-                  ),
-                  Text(
-                      'Qui sint nostrud voluptate occaecat elit non ad qui veniam.'),
-                ],
-              ),
-            )
-          ],
-        ),
+      child: Row(
+        children: [
+          ClipOval(
+              child: Image(
+            image: AssetImage(image),
+            height: 90,
+          )),
+          SizedBox(width: 10),
+          Expanded(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisSize: MainAxisSize.max,
+              children: [
+                Text(
+                  name,
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    _yellowStar,
+                    _yellowStar,
+                    _yellowStar,
+                    _yellowStar,
+                    _yellowStar,
+                  ],
+                ),
+                Text(
+                    'Qui sint nostrud voluptate occaecat elit non ad qui veniam.'),
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }
